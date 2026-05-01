@@ -1,0 +1,31 @@
+{
+  "name": "projects/8950024386765574773",
+  "projectId": "8950024386765574773",
+  "title": "Shaurya Portfolio",
+  "visibility": "PRIVATE",
+  "createTime": "2026-04-30T14:18:51Z",
+  "updateTime": "2026-04-30T14:18:51Z",
+  "projectType": "PROJECT_DESIGN",
+  "origin": "STITCH",
+  "deviceType": "DESKTOP",
+  "designTheme": {
+    "colorMode": "DARK",
+    "font": "SPACE_GROTESK",
+    "roundness": "ROUND_EIGHT",
+    "customColor": "#00F0FF",
+    "saturation": 3
+  },
+  "screens": {
+    "index": {
+      "id": "ecfedef67c0a4b0b8b91122dee206070",
+      "sourceScreen": "projects/8950024386765574773/screens/ecfedef67c0a4b0b8b91122dee206070",
+      "x": 0,
+      "y": 0,
+      "width": 2560,
+      "height": 7600
+    }
+  },
+  "metadata": {
+    "userRole": "OWNER"
+  }
+}

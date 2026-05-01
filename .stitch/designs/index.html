@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Shaurya Verma | Software Engineer &amp; Creative Technologist</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-fixed-variant": "#6700b5",
+                        "surface-container-high": "#282a2b",
+                        "tertiary-fixed": "#ffe179",
+                        "surface-variant": "#333536",
+                        "surface-dim": "#111415",
+                        "on-secondary-fixed": "#2c0051",
+                        "inverse-primary": "#006970",
+                        "on-primary": "#00363a",
+                        "surface-tint": "#00dbe9",
+                        "outline-variant": "#3b494b",
+                        "secondary": "#dcb8ff",
+                        "tertiary-container": "#fed639",
+                        "inverse-surface": "#e2e2e3",
+                        "tertiary": "#fff5de",
+                        "on-tertiary-fixed": "#231b00",
+                        "on-primary-fixed-variant": "#004f54",
+                        "on-secondary-container": "#dcb7ff",
+                        "on-error": "#690005",
+                        "on-tertiary-container": "#715d00",
+                        "secondary-fixed": "#efdbff",
+                        "outline": "#849495",
+                        "primary": "#dbfcff",
+                        "surface-container-highest": "#333536",
+                        "surface-container-low": "#1a1c1d",
+                        "on-secondary": "#480081",
+                        "background": "#111415",
+                        "on-tertiary": "#3b2f00",
+                        "on-background": "#e2e2e3",
+                        "error": "#ffb4ab",
+                        "on-surface-variant": "#b9cacb",
+                        "surface": "#111415",
+                        "primary-fixed-dim": "#00dbe9",
+                        "tertiary-fixed-dim": "#eac324",
+                        "on-primary-container": "#006970",
+                        "surface-container": "#1e2021",
+                        "error-container": "#93000a",
+                        "surface-bright": "#37393a",
+                        "on-primary-fixed": "#002022",
+                        "on-surface": "#e2e2e3",
+                        "inverse-on-surface": "#2e3132",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#00f0ff",
+                        "on-tertiary-fixed-variant": "#554500",
+                        "secondary-container": "#7701d0",
+                        "primary-fixed": "#7df4ff",
+                        "secondary-fixed-dim": "#dcb8ff",
+                        "surface-container-lowest": "#0c0f0f"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "48px",
+                        "gutter": "24px",
+                        "xs": "4px",
+                        "base": "8px",
+                        "xl": "80px",
+                        "sm": "12px",
+                        "container-max": "1200px",
+                        "md": "24px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Inter"],
+                        "label-caps": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "h3": ["Space Grotesk"],
+                        "h2": ["Space Grotesk"],
+                        "h1": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-md": ["1rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-caps": ["0.75rem", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "600"}],
+                        "body-lg": ["1.125rem", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h3": ["1.75rem", {"lineHeight": "1.3", "fontWeight": "500"}],
+                        "h2": ["2.5rem", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}],
+                        "h1": ["4rem", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .glass-card {
+            background: rgba(26, 28, 29, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease-in-out;
+        }
+        .glass-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 30px rgba(0, 240, 255, 0.15);
+            border-color: rgba(0, 240, 255, 0.3);
+        }
+        .neon-glow-primary:hover {
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.4);
+        }
+        .terminal-bullet::before {
+            content: ">";
+            color: #00f0ff;
+            margin-right: 8px;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<nav class="bg-zinc-950/70 backdrop-blur-md font-space-grotesk antialiased docked full-width top-0 sticky z-50 border-b border-white/10 shadow-[0_0_20px_rgba(0,240,255,0.1)]">
+<div class="max-w-7xl mx-auto px-6 h-16 flex justify-between items-center">
+<a class="text-xl font-bold tracking-tight text-white hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.5)] transition-all duration-300" href="#">Shaurya Verma</a>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-zinc-400 hover:text-white transition-colors" href="#about">About</a>
+<a class="text-cyan-400 border-b-2 border-cyan-400 pb-1" href="#projects">Projects</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#creative">Creative</a>
+<a class="text-zinc-400 hover:text-white transition-colors" href="#skills">Skills</a>
+</div>
+<button class="bg-primary-container text-on-primary-container px-6 py-2 rounded-full font-semibold scale-95 active:scale-90 transition-transform hover:drop-shadow-[0_0_8px_rgba(0,240,255,0.5)]">
+                Resume
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center justify-center overflow-hidden pt-16">
+<div class="absolute inset-0 z-0">
+<div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full"></div>
+<div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary-container/10 blur-[120px] rounded-full"></div>
+</div>
+<div class="container-max mx-auto px-gutter relative z-10 text-center">
+<div class="inline-block mb-6 px-4 py-1 rounded-full border border-primary/20 bg-primary/5 text-primary text-label-caps uppercase tracking-widest">
+                Available for Collaboration
+            </div>
+<h1 class="font-h1 text-h1 text-white mb-6">
+                Shaurya <span class="text-primary-container">Verma</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-10">
+                Aspiring Software Engineer / Passionate about AI &amp; Creative Technologies. Bridging the gap between code and cinematic storytelling.
+            </p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-xl font-bold flex items-center gap-2 neon-glow-primary transition-all duration-300">
+<span class="material-symbols-outlined">download</span>
+                    Download Resume
+                </button>
+<div class="p-[1px] rounded-xl bg-gradient-to-r from-primary/50 to-secondary/50">
+<button class="bg-surface-container px-8 py-4 rounded-xl font-bold text-white hover:bg-surface-container-high transition-colors">
+                        View Projects
+                    </button>
+</div>
+</div>
+<!-- Typing visual representation -->
+<div class="mt-20 max-w-3xl mx-auto glass-card rounded-xl p-6 text-left border border-white/10 font-mono text-sm shadow-2xl">
+<div class="flex gap-2 mb-4">
+<div class="w-3 h-3 rounded-full bg-error"></div>
+<div class="w-3 h-3 rounded-full bg-tertiary-fixed-dim"></div>
+<div class="w-3 h-3 rounded-full bg-primary-container"></div>
+</div>
+<div class="text-on-surface-variant space-y-1">
+<p><span class="text-secondary">const</span> <span class="text-primary-fixed">developer</span> = {</p>
+<p class="pl-4">name: <span class="text-tertiary-container">"Shaurya Verma"</span>,</p>
+<p class="pl-4">role: <span class="text-tertiary-container">"Software Engineer"</span>,</p>
+<p class="pl-4">passion: [<span class="text-tertiary-container">"AI"</span>, <span class="text-tertiary-container">"Video Editing"</span>],</p>
+<p class="pl-4">status: <span class="text-tertiary-container">"Building the future..."</span></p>
+<p>}</p>
+<p class="animate-pulse">_</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About & Education Section (Asymmetric Grid) -->
+<section class="py-xl container-max mx-auto px-gutter" id="about">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- About Summary -->
+<div class="lg:col-span-7 space-y-8">
+<h2 class="font-h2 text-h2 text-white">The Fusion of <span class="text-primary-container">Logic</span> &amp; <span class="text-secondary">Art</span></h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    I am a B.Tech student at G.L. Bajaj, specializing in Computer Science and Engineering. Beyond the syntax and algorithms, I find my creative outlet in the digital darkroom of video editing. My work is defined by a precision-first approach, whether I'm architecting a neural network for fashion recommendations or pacing a high-energy cinematic sequence.
+                </p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="glass-card p-6 rounded-xl border-l-4 border-l-primary-container">
+<span class="material-symbols-outlined text-primary-container mb-2">neurology</span>
+<h3 class="font-h3 text-xl text-white mb-2">AI Enthusiast</h3>
+<p class="text-on-surface-variant">Exploring the frontiers of Machine Learning and LLMs to solve real-world problems.</p>
+</div>
+<div class="glass-card p-6 rounded-xl border-l-4 border-l-secondary">
+<span class="material-symbols-outlined text-secondary mb-2">movie_edit</span>
+<h3 class="font-h3 text-xl text-white mb-2">Creative Editor</h3>
+<p class="text-on-surface-variant">Crafting visual narratives with over 200+ projects delivered to global clients.</p>
+</div>
+</div>
+</div>
+<!-- Education Timeline -->
+<div class="lg:col-span-5 glass-card p-8 rounded-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl">school</span>
+</div>
+<h3 class="font-h3 text-h3 text-white mb-8 flex items-center gap-3">
+<span class="material-symbols-outlined text-primary-container">history_edu</span>
+                    Education
+                </h3>
+<div class="space-y-8 relative before:content-[''] before:absolute before:left-[11px] before:top-2 before:bottom-2 before:w-[2px] before:bg-outline-variant">
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-primary-container border-4 border-surface shadow-[0_0_10px_rgba(0,240,255,0.5)]"></div>
+<h4 class="text-white font-bold">B.Tech CSE</h4>
+<p class="text-primary-container text-sm">2024 — 2028</p>
+<p class="text-on-surface-variant text-sm">G.L. Bajaj Institute of Technology and Management</p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-outline border-4 border-surface"></div>
+<h4 class="text-white font-bold">Intermediate</h4>
+<p class="text-zinc-500 text-sm">2024</p>
+<p class="text-on-surface-variant text-sm">KV 39 GTC</p>
+</div>
+<div class="relative pl-10">
+<div class="absolute left-0 top-1 w-6 h-6 rounded-full bg-outline border-4 border-surface"></div>
+<h4 class="text-white font-bold">High School</h4>
+<p class="text-zinc-500 text-sm">2022</p>
+<p class="text-on-surface-variant text-sm">KV 39 GTC</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section (Bento Grid Style) -->
+<section class="py-xl bg-surface-container-lowest" id="projects">
+<div class="container-max mx-auto px-gutter">
+<div class="text-center mb-16">
+<h2 class="font-h2 text-h2 text-white mb-4">Engineering <span class="text-primary-container">Solutions</span></h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Focused on building impactful platforms using AI and modern web architectures.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project Card 1 -->
+<div class="glass-card rounded-2xl overflow-hidden group">
+<div class="h-64 overflow-hidden">
+<img alt="Fashion Sensor Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A futuristic digital interface showing a sophisticated AI fashion recommendation engine. The screen displays high-tech wireframes of clothing items overlaid with data points and glowing neon blue connection lines. The lighting is dark and moody with vibrant cyan highlights, creating a cutting-edge technological atmosphere consistent with a software engineer's professional portfolio." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRu2i3vTqBWK3Il34PPjlde7hBkTSVpvqnmU7rduYE11C9Zz0xU5gIUY8C5_ttuARSPJAL2q-h55oBCCLq3FSp_bgwUOGo9u3bUZ1d7MFQVhkdI01P9Sa-TosZ3Qm6TG0s-txpiCOMzxfgSbDqZjGAfiyl-HeNmrMCZKEOWT2cA9RukEyh3ruRjKQ2F07ntIk10LOjqThby81vh8Er0xCW0TPFq66s4J-gSEK9GVTT_-TOFxwk_S0NhbkXx1MGZ5K_nEILRsJa7-w"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-h3 text-2xl text-white">Fashion Sensor</h3>
+<span class="text-primary-container material-symbols-outlined">trending_up</span>
+</div>
+<p class="text-on-surface-variant mb-6">An intelligent AI-powered fashion recommendation engine that analyzes user style preferences and body metrics to suggest personalized outfit combinations.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 border border-primary/20 text-primary-fixed-dim">Python</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 border border-primary/20 text-primary-fixed-dim">TensorFlow</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 border border-primary/20 text-primary-fixed-dim">React</span>
+</div>
+<a class="inline-flex items-center gap-2 text-primary-container font-bold hover:gap-4 transition-all" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="glass-card rounded-2xl overflow-hidden group">
+<div class="h-64 overflow-hidden">
+<img alt="PlaceMind AI Project" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" data-alt="A clean and modern web dashboard representing a career placement platform. The UI features minimalist glassmorphic cards, data visualization charts in soft purples and blues, and a structured layout for interview preparation. The scene is illuminated by soft, ambient glowing light from the screen, reflecting a professional and high-fidelity digital craftsmanship aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC8Far4FSAMlmf8eYdCsqQBoughB87O852p7Kgu9Ye885oa7FgfypukQAv6IHvbCUWU2ViZv419RxYH6hnWlPBf-EFDn4M4IYSfNLkVY-0w6HhJMegk6SllwaA8E_gnq7nQRlZhLnaR_2kxMKCF1wDWOkd-0tz3TCt92VL9TZ2PifzmKDwerzzCi2b_IJQBzKuou7BkcBin0ovcsvyD9xtXWpZUzADpu7jKi4dvLcIT7M6dv0zkCKC4B2ErkUOCG0e6OmdvOK1MfA"/>
+</div>
+<div class="p-8">
+<div class="flex justify-between items-start mb-4">
+<h3 class="font-h3 text-2xl text-white">PlaceMind AI</h3>
+<span class="text-secondary material-symbols-outlined">psychology</span>
+</div>
+<p class="text-on-surface-variant mb-6">A comprehensive placement preparation platform leveraging LLMs to conduct mock interviews, resume analysis, and skill gap assessments for students.</p>
+<div class="flex flex-wrap gap-2 mb-8">
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-secondary/10 border border-secondary/20 text-secondary">Node.js</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-secondary/10 border border-secondary/20 text-secondary">OpenAI API</span>
+<span class="px-3 py-1 text-xs font-medium rounded-full bg-secondary/10 border border-secondary/20 text-secondary">PostgreSQL</span>
+</div>
+<a class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all" href="#">
+                            View Case Study <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Creative Work Section -->
+<section class="py-xl" id="creative">
+<div class="container-max mx-auto px-gutter">
+<div class="glass-card rounded-3xl p-8 md:p-12 border border-secondary/20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-1/3 h-full opacity-20 pointer-events-none">
+<div class="w-full h-full bg-gradient-to-l from-secondary/50 to-transparent"></div>
+</div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-h2 text-h2 text-white mb-6">Creative <span class="text-secondary">Narratives</span></h2>
+<h4 class="text-xl font-bold text-white mb-4">Freelance Video Editor &amp; Social Media Manager</h4>
+<p class="text-on-surface-variant mb-8 text-lg">
+                            Transforming raw footage into compelling digital experiences. With a focus on rhythm, color, and storytelling, I help global brands amplify their message.
+                        </p>
+<div class="grid grid-cols-2 gap-6 mb-8">
+<div>
+<p class="text-h2 font-bold text-secondary">200+</p>
+<p class="text-zinc-400 text-sm">Projects Delivered</p>
+</div>
+<div>
+<p class="text-h2 font-bold text-secondary">30+</p>
+<p class="text-zinc-400 text-sm">Global Clients</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container border border-outline-variant">
+<span class="material-symbols-outlined text-secondary">admob</span>
+<span class="font-semibold text-sm">Premiere Pro</span>
+</div>
+<div class="flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container border border-outline-variant">
+<span class="material-symbols-outlined text-secondary">motion_mode</span>
+<span class="font-semibold text-sm">After Effects</span>
+</div>
+</div>
+</div>
+<div class="aspect-video glass-card rounded-2xl overflow-hidden border border-white/5 relative group cursor-pointer">
+<img alt="Video Editing Portfolio" class="w-full h-full object-cover" data-alt="A professional video editing suite setup in a dark studio. The scene features multiple monitors displaying complex timelines in Adobe Premiere Pro and After Effects, with vibrant waveform visualizations and cinematic color grading panels. Soft purple and blue neon lighting accents the high-end hardware, reflecting a mood of professional digital craftsmanship and high-fidelity creative production." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDpIgGn0AdjDmgAyKG2VNW0-4rt_VtRpEDAX39Uqz3D86wV2N6VnfYL8TnlbBvuaOflntIiifmr72CmpUv9BvRb081uRNHltbXlAn4mRoS0PSisHLE9GELfDot2BFu9iRN91GesyQP_ttSHk4eh6vrlo7vyu60TsI7lyKP9RazXFNg-8ZGFwyJGgvB9b0f6do5-Wd-YMgrvXCPTbCKBmWSuPZ4PQvs-HqmaB8ndwkRs011DMITHPT5t6RI_DwkMMYef0YxBsYONnqE"/>
+<div class="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/20 transition-all">
+<div class="w-16 h-16 rounded-full bg-secondary text-on-secondary flex items-center justify-center shadow-2xl scale-95 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-4xl" data-weight="fill">play_arrow</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills & Certifications Section -->
+<section class="py-xl container-max mx-auto px-gutter" id="skills">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Tech Stack -->
+<div class="lg:col-span-2">
+<h3 class="font-h3 text-h3 text-white mb-8">Technical <span class="text-primary-container">Arsenal</span></h3>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="glass-card p-4 rounded-xl flex items-center gap-3 border-b-2 border-b-primary-container/30">
+<span class="material-symbols-outlined text-primary-container">code</span>
+<span class="font-bold">Java</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-3 border-b-2 border-b-primary-container/30">
+<span class="material-symbols-outlined text-primary-container">terminal</span>
+<span class="font-bold">Python</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-3 border-b-2 border-b-primary-container/30">
+<span class="material-symbols-outlined text-primary-container">html</span>
+<span class="font-bold">HTML/CSS</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-3 border-b-2 border-b-primary-container/30">
+<span class="material-symbols-outlined text-primary-container">hub</span>
+<span class="font-bold">Git</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-3 border-b-2 border-b-secondary/30">
+<span class="material-symbols-outlined text-secondary">layers</span>
+<span class="font-bold">Data Structures</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-3 border-b-2 border-b-secondary/30">
+<span class="material-symbols-outlined text-secondary">category</span>
+<span class="font-bold">OOP</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-3 border-b-2 border-b-tertiary-fixed-dim/30">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">movie</span>
+<span class="font-bold">Premiere Pro</span>
+</div>
+<div class="glass-card p-4 rounded-xl flex items-center gap-3 border-b-2 border-b-tertiary-fixed-dim/30">
+<span class="material-symbols-outlined text-tertiary-fixed-dim">auto_fix_high</span>
+<span class="font-bold">After Effects</span>
+</div>
+</div>
+</div>
+<!-- Certifications -->
+<div class="space-y-6">
+<h3 class="font-h3 text-h3 text-white mb-8">Certifications</h3>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 glass-card rounded-xl border-l-2 border-l-primary-container">
+<div class="bg-primary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-primary-container">cloud_done</span>
+</div>
+<div>
+<p class="font-bold text-white text-sm">AWS Academy</p>
+<p class="text-zinc-500 text-xs">Cloud Foundations</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 glass-card rounded-xl border-l-2 border-l-secondary">
+<div class="bg-secondary/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-secondary">bolt</span>
+</div>
+<div>
+<p class="font-bold text-white text-sm">Gemini Certified</p>
+<p class="text-zinc-500 text-xs">Google AI Professional</p>
+</div>
+</div>
+<div class="flex items-center gap-4 p-4 glass-card rounded-xl border-l-2 border-l-error">
+<div class="bg-error/10 p-2 rounded-lg">
+<span class="material-symbols-outlined text-error">verified_user</span>
+</div>
+<div>
+<p class="font-bold text-white text-sm">Palo Alto</p>
+<p class="text-zinc-500 text-xs">Cybersecurity Professional</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer / Contact -->
+<footer class="bg-zinc-950 full-width py-12 border-t border-white/5 font-space-grotesk text-sm">
+<div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+<div class="space-y-4 text-center md:text-left">
+<p class="text-lg font-bold text-white">Shaurya Verma</p>
+<div class="flex flex-col gap-2">
+<a class="text-zinc-400 hover:text-cyan-400 transition-colors flex items-center justify-center md:justify-start gap-2" href="mailto:shaurya.verma048@gmail.com">
+<span class="material-symbols-outlined text-sm">mail</span>
+                        shaurya.verma048@gmail.com
+                    </a>
+<a class="text-zinc-400 hover:text-cyan-400 transition-colors flex items-center justify-center md:justify-start gap-2" href="tel:+917505926217">
+<span class="material-symbols-outlined text-sm">call</span>
+                        +91-7505926217
+                    </a>
+</div>
+</div>
+<div class="flex flex-col items-center md:items-end gap-6">
+<div class="flex gap-6">
+<a class="text-zinc-500 hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">LinkedIn</a>
+<a class="text-zinc-500 hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">GitHub</a>
+<a class="text-zinc-500 hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">YouTube</a>
+<a class="text-zinc-500 hover:text-cyan-400 transition-colors opacity-80 hover:opacity-100" href="#">Email</a>
+</div>
+<p class="text-zinc-600 text-xs">© 2024 Shaurya Verma. Engineered with Precision.</p>
+</div>
+</div>
+</footer>
+</body></html>
